@@ -10,14 +10,12 @@ define(['pipAPI', 'https://toni2110.github.io/IAT-Weight/IAT-Vikt-quiat10.js'], 
 				height : 4 //Used to position the "Or" in the combined block.
 			}, 
 			stimulusMedia : [ //Stimuli content as PIP's media objects
-    		   	{image : '1_F_COLOR.jpg'}, 
-    			{image : '2_F_COLOR.jpg'}, 
-    			{image : '3_F_COLOR.jpg'}, 
-			{image : '4_F_COLOR.jpg'}, 
-    			{image : '5_F_COLOR.jpg'},
-			{image : 'W_1_F.jpg'},
-			{image : 'w_2_F.jpg'},
-			{image : 'W_3_F.jpg'}
+    		   	{image : '1_FM.jpg'}, 
+    			{image : '2_FM.jpg'}, 
+    			{image : '3_FM.jpg'}, 
+			{image : '1_FK.jpg'}, 
+    			{image : '2_FK.jpg'},
+			{image : '3_FK.jpg'}
 			], 
 			//Stimulus css (style)
 			stimulusCss : {color:'#31940F','font-size':'1.8em'}
@@ -30,14 +28,12 @@ define(['pipAPI', 'https://toni2110.github.io/IAT-Weight/IAT-Vikt-quiat10.js'], 
 				height : 4 //Used to position the "Or" in the combined block.
 			}, 
 			stimulusMedia : [ //Stimuli content as PIP's media objects
-    			{image : '1_S_COLOR.jpg'}, 
-    			{image : '2_S_COLOR.jpg'}, 
-    			{image : '3_S_COLOR.jpg'}, 
-    			{image : '4_S_COLOR.jpg'}, 
-			{image : '5_S_COLOR.jpg'}, 
-			{image : 'W_1_s.JPG'}, 
-			{image : 'w_2_S.jpg'}, 
-    			{image : 'W_3_S.jpg'}			
+    			{image : '1_SM.jpg'}, 
+    			{image : '2_SM.jpg'}, 
+    			{image : '3_SM.jpg'}, 
+			{image : '1_SK.jpg'}, 
+    			{image : '2_SK.jpg'},
+			{image : '3_SK.jpg'}			
 			], 
 			//Stimulus css
 			stimulusCss : {color:'#31940F','font-size':'1.8em'}
