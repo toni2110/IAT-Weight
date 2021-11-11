@@ -77,35 +77,29 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 					height : 4 //Used to position the "Or" in the combined block.
 				},
 				stimulusMedia : [ //Stimuli content as PIP's media objects
-					{word: 'Ineffektiv'},
-					{word: 'Inkompetent'},
-					{word: 'Trög'},
-					{word: 'Slö'},
-					{word: 'Initiativlös'},
-					{word: 'obehaglig'},
-					{word: 'äcklig'},
-					{word: 'ond'}
+					{word: 'ineffektiv'},
+					{word: 'inkompetent'},
+					{word: 'trög'},
+					{word: 'slö'},
+					{word: 'initiativlös'},
 				],
 				//Stimulus css
 				stimulusCss : {color:'#0000FF','font-size':'2.3em'}
 			},
 			attribute2 :
 			{
-				name : 'Good words',
+				name : 'högpresterande',
 				title : {
-					media : {word : 'Good words'},
+					media : {word : 'Högpresterande'},
 					css : {color:'#0000FF','font-size':'1.8em'},
 					height : 4 //Used to position the "Or" in the combined block.
 				},
 				stimulusMedia : [ //Stimuli content as PIP's media objects
-					{word: 'laughter'},
-					{word: 'happy'},
-					{word: 'glorious'},
-					{word: 'joy'},
-					{word: 'wonderful'},
-					{word: 'peace'},
-					{word: 'pleasure'},
-					{word: 'love'}
+					{word: 'effektiv'},
+					{word: 'produktiv'},
+					{word: 'flitig'},
+					{word: 'ambitiös'},
+					{word: 'målmedveten'},
 				],
 				//Stimulus css
 				stimulusCss : {color:'#0000FF','font-size':'2.3em'}
