@@ -136,12 +136,12 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			remindError : true,
 
 			remindErrorText : '<p align="center" style="font-size:"0.6em"; font-family:arial">' +
-			'If you make a mistake, a red <font color="#ff0000"><b>X</b></font> will appear. ' +
-			'Press the other key to continue.<p/>',
+			'Om du gör fel kommer ett rött <font color="#ff0000"><b>X</b></font> visas. ' +
+			'Korrigera felet genom att trycka på den andra tangenten.<p/>',
 
 			remindErrorTextTouch : '<p align="center" style="font-size:"1.4em"; font-family:arial">' +
-			'If you make a mistake, a red <font color="#ff0000"><b>X</b></font> will appear. ' +
-			'Touch the other side to continue.<p/>',
+			'Om du gör fel kommer ett rött <font color="#ff0000"><b>X</b></font> visas. ' +
+			'Korrigera felet genom att trycka på den andra sidan.<p/>',
 
 			errorCorrection : true, //Should participants correct error responses?
 			errorFBDuration : 500, //Duration of error feedback display (relevant only when errorCorrection is false)
@@ -158,17 +158,17 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
             		rightKey: 'i',
 			
 			//Text and style for key instructions displayed about the category labels.
-			leftKeyText : 'Press "E" for', 
-			rightKeyText : 'Press "I" for', 
+			leftKeyText : 'Tryck "E" för', 
+			rightKeyText : 'Tryck "I" för', 
 			keysCss : {'font-size':'0.8em', 'font-family':'courier', color:'#000000'},
 			//Text and style for the separator between the top and bottom category labels.
-			orText : 'or', 
+			orText : 'eller', 
 			orCss : {'font-size':'1.8em', color:'#000000'},
 			
 			instWidth : 99, //The width of the instructions stimulus
             
-			finalText : 'Press space to continue to the next task', 
-			finalTouchText : 'Touch the bottom green area to continue to the next task',
+			finalText : 'Tryck mellanslag för att fortsätta till nästa uppgift', 
+			finalTouchText : 'Tryck det nedre gröna området för att fortsätta till nästa uppgift',
 
 			touchMaxStimulusWidth : '50%', 
 			touchMaxStimulusHeight : '50%', 
@@ -182,12 +182,12 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			instAttributePractice: '<div><p align="center" style="font-size:20px; font-family:arial">' +
 				'<font color="#000000"><u>Part blockNum of nBlocks </u><br/><br/></p>' +
 				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
-				'Put a left finger on the <b>E</b> key for items that belong to the category <font color="#0000ff">leftAttribute.</font>' +
-				'<br/>Put a right finger on the <b>I</b> key for items that belong to the category <font color="#0000ff">rightAttribute</font>.<br/><br/>' +
-				'If you make a mistake, a red <font color="#ff0000"><b>X</b></font> will appear. ' +
-				'Press the other key to continue.<br/>' +
-				'<u>Go as fast as you can</u> while being accurate.<br/><br/></p>'+
-				'<p align="center">Press the <b>space bar</b> when you are ready to start.</font></p></div>',
+				'Placera ditt vänstra finger på tangenten <b>E</b> för objekt som tillhör kategorin <font color="#0000ff">leftAttribute.</font>' +
+				'<br/>Placera ditt högra finger på tangenten <b>I</b> för objekt som tillhör kategorin <font color="#0000ff">rightAttribute</font>.<br/><br/>' +
+				'Om du gör fel kommer ett rött <font color="#ff0000"><b>X</b></font> visas. ' +
+				'Korrigera felet genom att trycka på den andra tangenten.<br/>' +
+				'<u>Sortera så fort du kan</u>, samtidigt som du gör så få fel som möjligt.<br/><br/></p>'+
+				'<p align="center">Tryck <b>mellanslag</b> när du är redo att börja.</font></p></div>',
 			instAttributePracticeTouch: [
 				'<div>',
 					'<p align="center">',
@@ -195,13 +195,13 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 					'</p>',
 					'<p align="left" style="margin-left:5px">',
 						'<br/>',
-						'Put a left finger over the the <b>left</b> green area for items that belong to the category <font color="#0000ff">leftAttribute</font>.<br/>',
-						'Put a right finger over the <b>right</b> green area for items that belong to the category <font color="#0000ff">rightAttribute</font>.<br/>',
-						'Items will appear one at a time.<br/>',
+						'Placera ditt vänstra finger över det <b>vänstra</b> gröna området för objekt som tillhör kategorin <font color="#0000ff">leftAttribute</font>.<br/>',
+						'Placera ditt högra finger över det <b>högra</b> gröna området för objekt som tillhör kategorin <font color="#0000ff">rightAttribute</font>.<br/>',
+						'Objekten kommer att visas ett åt gången.<br/>',
 						'<br/>',
-						'If you make a mistake, a red <font color="#ff0000"><b>X</b></font> will appear. Touch the other side. <u>Go as fast as you can</u> while being accurate.',
+						'Om du gör fel kommer ett rött <font color="#ff0000"><b>X</b></font> visas. Korrigera felet genom att trycka på den andra sidan. <u>Sortera så fort du kan</u>, samtidigt som du gör så få fel som möjligt.',
 					'</p>',
-					'<p align="center">Touch the <b>lower </b> green area to start.</p>',
+					'<p align="center">Tryck på <b>nedre</b> gröna området mmt börja. reen area to start.</p>',
 				'</div>'
 			].join('\n'),
 
