@@ -180,10 +180,11 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			// leftCategory, rightCategory, leftAttribute and rightAttribute, blockNum, nBlocks.
 			// Notice that this is HTML text.
 			instAttributePractice: '<div><p align="center" style="font-size:20px; font-family:arial">' +
-				'<font color="#000000"><u>Part blockNum of nBlocks </u><br/><br/></p>' +
+				'<font color="#000000"><u>Del blockNum av nBlocks </u><br/><br/></p>' +
 				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
 				'Placera ditt vänstra finger på tangenten <b>E</b> för objekt som tillhör kategorin <font color="#0000ff">leftAttribute.</font>' +
-				'<br/>Placera ditt högra finger på tangenten <b>I</b> för objekt som tillhör kategorin <font color="#0000ff">rightAttribute</font>.<br/><br/>' +
+				'<br/>Placera ditt högra finger på tangenten <b>I</b> för objekt som tillhör kategorin <font color="#0000ff">rightAttribute</font>.<br/>' +
+				'Objekten kommer att visas ett åt gången.<br/><br/>' +
 				'Om du gör fel kommer ett rött <font color="#ff0000"><b>X</b></font> visas. ' +
 				'Korrigera felet genom att trycka på den andra tangenten.<br/>' +
 				'<u>Sortera så fort du kan</u>, samtidigt som du gör så få fel som möjligt.<br/><br/></p>'+
@@ -191,7 +192,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			instAttributePracticeTouch: [
 				'<div>',
 					'<p align="center">',
-						'<u>Part blockNum of nBlocks</u>',
+						'<u>Del blockNum av nBlocks</u>',
 					'</p>',
 					'<p align="left" style="margin-left:5px">',
 						'<br/>',
@@ -201,111 +202,111 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 						'<br/>',
 						'Om du gör fel kommer ett rött <font color="#ff0000"><b>X</b></font> visas. Korrigera felet genom att trycka på den andra sidan. <u>Sortera så fort du kan</u>, samtidigt som du gör så få fel som möjligt.',
 					'</p>',
-					'<p align="center">Tryck på <b>nedre</b> gröna området mmt börja. reen area to start.</p>',
+					'<p align="center">Tryck på det <b>nedre</b> gröna området när du är redo att börja.</p>',
 				'</div>'
 			].join('\n'),
 
 			instCategoriesPractice: '<div><p align="center" style="font-size:20px; font-family:arial">' +
-				'<font color="#000000"><u>Part blockNum of nBlocks </u><br/><br/></p>' +
+				'<font color="#000000"><u>Del blockNum av nBlocks </u><br/><br/></p>' +
 				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
-				'Put a left finger on the <b>E</b> key for items that belong to the category <font color="#336600">leftCategory</font>. ' +
-				'<br/>Put a right finger on the <b>I</b> key for items that belong to the category <font color="#336600">rightCategory</font>.<br/>' +
-				'Items will appear one at a time.<br/><br/>' +
-				'If you make a mistake, a red <font color="#ff0000"><b>X</b></font> will appear. ' +
-				'Press the other key to continue.<br/>' +
-				'<u>Go as fast as you can</u> while being accurate.<br/><br/></p>'+
-				'<p align="center">Press the <b>space bar</b> when you are ready to start.</font></p></div>',
+				'Placera ditt vänstra finger på tangenten <b>E</b> för objekt som tillhör kategorin <font color="#336600">leftCategory</font>. ' +
+				'<br/>Placera ditt högra finger på tangenten <b>I</b> för objekt som tillhör kategorin <font color="#336600">rightCategory</font>.<br/>' +
+				'Objekten kommer att visas ett åt gången.<br/><br/>' +
+				'Om du gör fel kommer ett rött <font color="#ff0000"><b>X</b></font> visas. ' +
+				'Korrigera felet genom att trycka på den andra tangenten.<br/>' +
+				'<u>Sortera så fort du kan</u>, samtidigt som du gör så få fel som möjligt.<br/><br/></p>'+
+				'<p align="center">Tryck <b>mellanslag</b> när du är redo att börja.</font></p></div>',
 			instCategoriesPracticeTouch: [
 				'<div>',
 					'<p align="center">',
-						'<u>Part blockNum of nBlocks</u>',
+						'<u>Del blockNum av nBlocks</u>',
 					'</p>',
 					'<p align="left" style="margin-left:5px">',
 						'<br/>',
-						'Put a left finger over the <b>left</b> green area for items that belong to the category <font color="#336600">leftCategory</font>.<br/>',
-						'Put a right finger over the <b>right</b> green area for items that belong to the category <font color="#336600">rightCategory</font>.<br/>',
-						'Items will appear one at a time.<br/>',
+						'Placera ditt vänstra finger över det <b>vänstra</b> gröna området för objekt som tillhör kategorin <font color="#336600">leftCategory</font>.<br/>',
+						'Placera ditt högra finger över det <b>högra</b> gröna området för objekt som tillhör kategorin <font color="#336600">rightCategory</font>.<br/>',
+						'Objekten kommer att visas ett åt gången.<br/>',
 						'<br/>',
-						'If you make a mistake, a red <font color="#ff0000"><b>X</b></font> will appear. Touch the other side. <u>Go as fast as you can</u> while being accurate.',
+						'Om du gör fel kommer ett rött <font color="#ff0000"><b>X</b></font> visas. Korrigera felet genom att trycka på den andra sidan. <u>Sortera så fort du kan</u>, samtidigt som du gör så få fel som möjligt.',
 					'</p>',
-					'<p align="center">Touch the <b>lower </b> green area to start.</p>',
+					'<p align="center">Tryck på det <b>nedre</b> gröna området när du är redo att börja.</p>',
 				'</div>'
 			].join('\n'),
 
 			instFirstCombined : '<div><p align="center" style="font-size:20px; font-family:arial">' +
-				'<font color="#000000"><u>Part blockNum of nBlocks </u><br/><br/></p>' +
+				'<font color="#000000"><u>Del blockNum av nBlocks </u><br/><br/></p>' +
 				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
-				'Use the <b>E</b> key for <font color="#336600">leftCategory</font> and for <font color="#0000ff">leftAttribute</font>.<br/>' +
-				'Use the <b>I</b> key for <font color="#336600">rightCategory</font> and for  <font color="#0000ff">rightAttribute</font>.<br/>' +
-				'Each item belongs to only one category.<br/><br/>' +
-				'If you make a mistake, a red <font color="#ff0000"><b>X</b></font> will appear. ' +
-				'Press the other key to continue.<br/>' + 
-				'<u>Go as fast as you can</u> while being accurate.<br/><br/></p>' +
-				'<p align="center">Press the <b>space bar</b> when you are ready to start.</font></p></div>',
+				'Använd tangenten <b>E</b> för <font color="#336600">leftCategory</font> och för <font color="#0000ff">leftAttribute</font>.<br/>' +
+				'Använd tangenten <b>I</b> för <font color="#336600">rightCategory</font> och för  <font color="#0000ff">rightAttribute</font>.<br/>' +
+				'Objekt tillhör alltid endast en kategori.<br/><br/>' +
+				'Om du gör fel kommer ett rött <font color="#ff0000"><b>X</b></font> visas. ' +
+				'Korrigera felet genom att trycka på den andra tangenten.<br/>' + 
+				'<u>Sortera så fort du kan</u>, samtidigt som du gör så få fel som möjligt.<br/><br/></p>' +
+				'<p align="center">Tryck <b>mellanslag</b> när du är redo att börja.</font></p></div>',
 			instFirstCombinedTouch:[
 				'<div>',
 					'<p align="center">',
-						'<u>Part blockNum of nBlocks</u>',
+						'<u>Del blockNum av nBlocks</u>',
 					'</p>',
 					'<br/>',
 					'<br/>',
 					'<p align="left" style="margin-left:5px">',
-						'Put a left finger over the <b>left</b> green area for <font color="#336600">leftCategory</font> items and for <font color="#0000ff">leftAttribute</font>.</br>',
-						'Put a right finger over the <b>right</b> green area for <font color="#336600">rightCategory</font> items and for <font color="#0000ff">rightAttribute</font>.</br>',
-							'If you make a mistake, a red <font color="#ff0000"><b>X</b></font> will appear. Touch the other side. <u>Go as fast as you can</u> while being accurate.</br>',
-						'</p>',
-						'<p align="center">Touch the <b>lower </b> green area to start.</p>',
+						'Placera ditt vänstra finger över det <b>vänstra</b> gröna området för objekt som tillhör <font color="#336600">leftCategory</font> och för <font color="#0000ff">leftAttribute</font>.</br>',
+						'Placera ditt högra finger över det <b>högra</b> gröna området för objekt som tillhör <font color="#336600">rightCategory</font> och för <font color="#0000ff">rightAttribute</font>.</br>',
+						'Om du gör fel kommer ett rött <font color="#ff0000"><b>X</b></font> visas. Korrigera felet genom att trycka på den andra sidan. <u>Sortera så fort du kan</u>, samtidigt som du gör så få fel som möjligt.</br>',
+					'</p>',
+					'<p align="center">Tryck på det <b>nedre</b> gröna området när du är redo att börja.</p>',
 				'</div>'
 			].join('\n'),
 
 			instSecondCombined : '<div><p align="center" style="font-size:20px; font-family:arial">' +
-				'<font color="#000000"><u>Part blockNum of nBlocks </u><br/><br/></p>' +
+				'<font color="#000000"><u>Del blockNum av nBlocks </u><br/><br/></p>' +
 				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
-				'This is the same as the previous part.<br/>' +
-				'Use the <b>E</b> key for <font color="#336600">leftCategory</font> and for <font color="#0000ff">leftAttribute</font>.<br/>' +
-				'Use the <b>I</b> key for <font color="#336600">rightCategory</font> and for  <font color="#0000ff">rightAttribute</font>.<br/>' +
-				'Each item belongs to only one category.<br/><br/>' +
-				'<u>Go as fast as you can</u> while being accurate.<br/><br/></p>' +
-				'<p align="center">Press the <b>space bar</b> when you are ready to start.</font></p></div>',
+				'Denna del är samma som förra delen.<br/>' +
+				'Använd tangenten <b>E</b> för <font color="#336600">leftCategory</font> och för <font color="#0000ff">leftAttribute</font>.<br/>' +
+				'Använd tangenten <b>I</b> för <font color="#336600">rightCategory</font> och för  <font color="#0000ff">rightAttribute</font>.<br/>' +
+				'Objekt tillhör alltid endast en kategori.<br/><br/>' +
+				'<u>Sortera så fort du kan</u>, samtidigt som du gör så få fel som möjligt.<br/><br/></p>' +
+				'<p align="center">Tryck <b>mellanslag</b> när du är redo att börja.</font></p></div>',
 			instSecondCombinedTouch:[
 				'<div>',
-					'<p align="center"><u>Part blockNum of nBlocks</u></p>',
+					'<p align="center"><u>Del blockNum av nBlocks</u></p>',
 					'<br/>',
 					'<br/>',
 
 					'<p align="left" style="margin-left:5px">',
-						'Put a left finger over the <b>left</b> green area for <font color="#336600">leftCategory</font> items and for <font color="#0000ff">leftAttribute</font>.<br/>',
-						'Put a right finger over the <b>right</b> green area for <font color="#336600">rightCategory</font> items and for <font color="#0000ff">rightAttribute</font>.<br/>',
+						'Placera ditt vänstra finger över det <b>vänstra</b> gröna området för objekt som tillhör <font color="#336600">leftCategory</font> och för <font color="#0000ff">leftAttribute</font>.<br/>',
+						'Placera ditt högra finger över det <b>högra</b> gröna området för objekt som tillhör <font color="#336600">rightCategory</font> och för <font color="#0000ff">rightAttribute</font>.<br/>',
 						'<br/>',
-						'<u>Go as fast as you can</u> while being accurate.<br/>',
+						'<u>Sortera så fort du kan</u>, samtidigt som du gör så få fel som möjligt.<br/>',
 					'</p>',
-					'<p align="center">Touch the <b>lower </b> green area to start.</p>',
+					'<p align="center">Tryck på det <b>nedre</b> gröna området när du är redo att börja.</p>',
 				'</div>'
 			].join('\n'),
 
 			instSwitchCategories : '<div><p align="center" style="font-size:20px; font-family:arial">' +
-				'<font color="#000000"><u>Part blockNum of nBlocks </u><br/><br/></p>' +
+				'<font color="#000000"><u>Del blockNum av nBlocks </u><br/><br/></p>' +
 				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
-				'<b>Watch out, the labels have changed position!</b><br/>' +
-				'Put the left finger on the <b>E</b> key for <font color="#336600">leftCategory</font>.<br/>' +
-				'Put the right finger on the <b>I</b> key for <font color="#336600">rightCategory</font>.<br/><br/>' +
-				'<u>Go as fast as you can</u> while being accurate.<br/><br/></p>' +
-				'<p align="center">Press the <b>space bar</b> when you are ready to start.</font></p></div>',
+				'<b>Notera att kategorierna ovan nu har bytt plats med varandra!</b><br/>' +
+				'Placera ditt vänstra finger på tangenten <b>E</b> för <font color="#336600">leftCategory</font>.<br/>' +
+				'Placera ditt högra finger på tangenten <b>I</b> för <font color="#336600">rightCategory</font>.<br/><br/>' +
+				'<u>Sortera så fort du kan</u>, samtidigt som du gör så få fel som möjligt.<br/><br/></p>' +
+				'<p align="center">Tryck <b>mellanslag</b> när du är redo att börja.</font></p></div>',
 			instSwitchCategoriesTouch: [
 				'<div>',
 					'<p align="center">',
-						'<u>Part blockNum of nBlocks</u>',
+						'<u>Del blockNum av nBlocks</u>',
 					'</p>',
 					'<p align="left" style="margin-left:5px">',
 						'<br/>',
-						'Watch out, the labels have changed position!<br/>',
-							'Put a left finger over the <b>left</b> green area for <font color="#336600">leftCategory</font> items.<br/>',
-							'Put a right finger over the <b>right</b> green area for <font color="#336600">rightCategory</font> items.<br/>',
-							'Items will appear one at a time.',
+						'Notera att kategorierna ovan nu har bytt plats med varandra!<br/>',
+							'Placera ditt vänstra finger över det <b>vänstra</b> gröna området för <font color="#336600">leftCategory</font> items.<br/>',
+							'Placera ditt högra finger över det <b>högra</b> gröna området för <font color="#336600">rightCategory</font> items.<br/>',
+							'Objekten kommer att visas ett åt gången.',
 							'<br/>',
-							'If you make a mistake, a red <font color="#ff0000"><b>X</b></font> will appear. Touch the other side. <u>Go as fast as you can</u> while being accurate.<br/>',
+							'Om du gör fel kommer ett rött <font color="#ff0000"><b>X</b></font> visas. Korrigera felet genom att trycka på den andra sidan. <u>Sortera så fort du kan</u>, samtidigt som du gör så få fel som möjligt.<br/>',
 						'</p>',
-						'<p align="center">Touch the <b>lower </b> green area to start.</p>',
+						'<p align="center">Tryck på det <b>nedre</b> gröna området när du är redo att börja.</p>',
 				'</div>'
 			].join('\n'),
 
@@ -316,27 +317,27 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 
 			showDebriefing:true, //Show feedback in the last trial? Relevant only in a Qualtrics IAT because in Qualtrics we cannot access the saved feedback and IAT score later in the survey.
 			//Texts for the trials that show the debriefing.
-			preDebriefingText : 'Press space to see your result', //Text in the trial that comes before showing the debriefing.
-			preDebriefingTouchText : 'Touch the bottom green area to see your result', //Touch version for the text in the trial that comes before showing the debriefing.
-			debriefingTextTop : 'Your result:', //Will be shown above the feedback text.
+			preDebriefingText : 'Tryck mellanslag för att se ditt resultat', //Text in the trial that comes before showing the debriefing.
+			preDebriefingTouchText : 'Tryck på det nedre gröna området för att se ditt resultat', //Touch version for the text in the trial that comes before showing the debriefing.
+			debriefingTextTop : 'Ditt resultat:', //Will be shown above the feedback text.
 			//ATTENTION: We do not recommend showing participants their results. The IAT is a typical psychological measure so it is not very accurate. 
 			//In Project Implicit's website, you can see that we added much text to explain that there is still much unknown about the meaning of these results.
 			//We strongly recommend that you provide all these details in the debriefing of the experiment.
-			debriefingTextBottom : 'This result is not a definitive assessment of your attitudes. It is provided for educational purposes only.  Press space to continue.', //Will be shown below the feedback text. 
-            debriefingTextBottomTouch : 'This result is not a definitive assessment of your attitudes. It is provided for educational purposes only.  Touch the green area to continue.',
+			debriefingTextBottom : 'Detta resultat är ingen definitiv utvärdering av dina attityder utan är enbart avsett för utbildningssyfte. Tryck på mellanslag för att fortsätta.', //Will be shown below the feedback text. 
+         		debriefingTextBottomTouch : 'Detta resultat är ingen definitiv utvärdering av dina attityder utan är enbart avsett för utbildningssyfte. Tryck på det nedre gröna området för att fortsätta.',
 			//The default feedback messages for each cutoff -
 			//attribute1, and attribute2 will be replaced with the name of attribute1 and attribute2.
 			//categoryA is the name of the category that is found to be associated with attribute1,
 			//and categoryB is the name of the category that is found to be associated with attribute2.
-			fb_strong_Att1WithCatA_Att2WithCatB : 'Your responses suggested a strong automatic preference for categoryB over categoryA.',
-			fb_moderate_Att1WithCatA_Att2WithCatB : 'Your responses suggested a moderate automatic preference for categoryB over categoryA.',
-			fb_slight_Att1WithCatA_Att2WithCatB : 'Your responses suggested a slight automatic preference for categoryB over categoryA.',
-			fb_equal_CatAvsCatB : 'Your responses suggested no automatic preference between categoryA and categoryB.',
+			fb_strong_Att1WithCatA_Att2WithCatB : 'Dina svar antyder att du har en stark automatisk preferens för categoryB över categoryA.',
+			fb_moderate_Att1WithCatA_Att2WithCatB : 'Dina svar antyder att du har en medelstark automatisk preferens för categoryB över categoryA.',
+			fb_slight_Att1WithCatA_Att2WithCatB : 'Dina svar antyder att du har en svag automatisk preferens för categoryB över categoryA.',
+			fb_equal_CatAvsCatB : 'Dina svar antyder att du inte har några automatiska preferenser mellan categoryA och categoryB.',
 
 			//Error messages in the feedback
-			manyErrors: 'There were too many errors made to determine a result.',
-			tooFast: 'There were too many fast trials to determine a result.',
-			notEnough: 'There were not enough trials to determine a result.'
+			manyErrors: 'Det var för många fel för att kunna säkerställa ett resultat.',
+			tooFast: 'Det var för många snabba försök för att kunna säkerställa ett resultat.',
+			notEnough: 'Det var inte tillräckligt många försök för att kunna säkerställa ett resultat.'
 		};
 
 		// extend the "current" object with the default
