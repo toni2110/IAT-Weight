@@ -3,9 +3,9 @@ define(['pipAPI', 'https://toni2110.github.io/IAT-Weight/IAT-Vikt-quiat10.js'], 
 
 	return iatExtension({
 		category1 : {
-			name : '&ouml;verviktig', //Will appear in the data.
+			name : 'överviktig', //Will appear in the data.
 			title : {
-				media : {word : 'Överviktig'}, //Name of the category presented in the task.
+				media : {word : '&#214;verviktig'}, //Name of the category presented in the task.
 				css : {color:'#31940F','font-size':'2em'}, //Style of the category title.
 				height : 4 //Used to position the "Or" in the combined block.
 			}, 
