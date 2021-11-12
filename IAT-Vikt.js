@@ -10,12 +10,12 @@ define(['pipAPI', 'https://toni2110.github.io/IAT-Weight/IAT-Vikt-quiat10.js'], 
 				height : 4 //Used to position the "Or" in the combined block.
 			}, 
 			stimulusMedia : [ //Stimuli content as PIP's media objects
-    		    {image : 'black1.jpg'}, 
-    			{image : 'black2.jpg'}, 
-    			{image : 'black3.jpg'}, 
-    			{image : 'black4.jpg'}, 
-    			{image : 'black5.jpg'}, 
-    			{image : 'black6.jpg'}
+    		    {image : '1_FM.jpg'}, 
+    			{image : '2_FM.jpg'}, 
+    			{image : '3_FM.jpg'}, 
+    			{image : '1_FK.jpg'}, 
+    			{image : '2_FK.jpg'}, 
+    			{image : '3_FK.jpg'}
 			], 
 			//Stimulus css (style)
 			stimulusCss : {color:'#31940F','font-size':'1.8em'}
@@ -28,18 +28,18 @@ define(['pipAPI', 'https://toni2110.github.io/IAT-Weight/IAT-Vikt-quiat10.js'], 
 				height : 4 //Used to position the "Or" in the combined block.
 			}, 
 			stimulusMedia : [ //Stimuli content as PIP's media objects
-    		    {image : 'yf1.jpg'}, 
-    			{image : 'yf4.jpg'}, 
-    			{image : 'yf5.jpg'}, 
-    			{image : 'ym2.jpg'}, 
-    			{image : 'ym3.jpg'}, 
-    			{image : 'ym5.jpg'}			], 
+    		    {image : '1_SM.jpg'}, 
+    			{image : '2_SM.jpg'}, 
+    			{image : '3_SM.jpg'}, 
+    			{image : '1_SK.jpg'}, 
+    			{image : '2_SK.jpg'}, 
+    			{image : '3_SK.jpg'}			], 
 			//Stimulus css
 			stimulusCss : {color:'#31940F','font-size':'1.8em'}
 		},	
 
 		base_url : {//Where are your images at?
-			image : 'https://baranan.github.io/minno-tasks/images/'
+			image : 'https://toni2110.github.io/IAT-Weight/IAT-bilderna/'
 		} 
 	});
 });
