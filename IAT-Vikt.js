@@ -10,7 +10,7 @@ define(['pipAPI', 'https://toni2110.github.io/IAT-Weight/IAT-Vikt-quiat10.js'], 
 				height : 4 //Used to position the "Or" in the combined block.
 			}, 
 			stimulusMedia : [ //Stimuli content as PIP's media objects
-    		    {image : '1_FM.jpg'}, 
+    		    	{image : '1_FM.jpg'}, 
     			{image : '2_FM.jpg'}, 
     			{image : '3_FM.jpg'}, 
     			{image : '1_FK.jpg'}, 
@@ -28,7 +28,7 @@ define(['pipAPI', 'https://toni2110.github.io/IAT-Weight/IAT-Vikt-quiat10.js'], 
 				height : 4 //Used to position the "Or" in the combined block.
 			}, 
 			stimulusMedia : [ //Stimuli content as PIP's media objects
-    		    {image : '1_SM.jpg'}, 
+    		    	{image : '1_SM.jpg'}, 
     			{image : '2_SM.jpg'}, 
     			{image : '3_SM.jpg'}, 
     			{image : '1_SK.jpg'}, 
