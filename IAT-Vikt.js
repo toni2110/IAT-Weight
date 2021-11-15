@@ -3,7 +3,7 @@ define(['pipAPI', 'https://toni2110.github.io/IAT-Weight/IAT-Vikt-quiat10.js'], 
 
 	return iatExtension({
 		category1 : {
-			name : 'överviktig', //Will appear in the data.
+			name : 'överviktiga', //Will appear in the data.
 			title : {
 				media : {word : 'Överviktig'}, //Name of the category presented in the task.
 				css : {color:'#31940F','font-size':'2em'}, //Style of the category title.
@@ -21,7 +21,7 @@ define(['pipAPI', 'https://toni2110.github.io/IAT-Weight/IAT-Vikt-quiat10.js'], 
 			stimulusCss : {color:'#31940F','font-size':'1.8em'}
 		},	
 		category2 :	{
-			name : 'normalviktig', //Will appear in the data.
+			name : 'normalviktiga', //Will appear in the data.
 			title : {
 				media : {word : 'Normalviktig'}, //Name of the category presented in the task.
 				css : {color:'#31940F','font-size':'2em'}, //Style of the category title.
