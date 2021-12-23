@@ -238,7 +238,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
 				'Använd tangenten <b>E</b> för <font color="#336600">leftCategory</font> och för <font color="#0000ff">leftAttribute</font>.<br/>' +
 				'Använd tangenten <b>I</b> för <font color="#336600">rightCategory</font> och för  <font color="#0000ff">rightAttribute</font>.<br/>' +
-				'Objekt tillhör alltid endast en kategori.<br/><br/>' +
+				'Objekten tillhör alltid endast en kategori.<br/><br/>' +
 				'Om du gör fel kommer ett rött <font color="#ff0000"><b>X</b></font> visas. ' +
 				'Korrigera felet genom att trycka på den andra tangenten.<br/>' + 
 				'<u>Sortera så fort du kan</u>, samtidigt som du gör så få fel som möjligt.<br/><br/></p>' +
@@ -265,7 +265,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				'Denna del är samma som förra delen.<br/>' +
 				'Använd tangenten <b>E</b> för <font color="#336600">leftCategory</font> och för <font color="#0000ff">leftAttribute</font>.<br/>' +
 				'Använd tangenten <b>I</b> för <font color="#336600">rightCategory</font> och för  <font color="#0000ff">rightAttribute</font>.<br/>' +
-				'Objekt tillhör alltid endast en kategori.<br/><br/>' +
+				'Objekten tillhör alltid endast en kategori.<br/><br/>' +
 				'<u>Sortera så fort du kan</u>, samtidigt som du gör så få fel som möjligt.<br/><br/></p>' +
 				'<p align="center">Tryck <b>mellanslag</b> när du är redo att börja.</font></p></div>',
 			instSecondCombinedTouch:[
